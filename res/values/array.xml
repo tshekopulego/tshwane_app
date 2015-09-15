@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="attach_options">
+        <item>@string/take_picture</item>
+        <item>@string/from_file</item>
+    </string-array>
+    <string-array name="contactcrime" translatable="false">
+        <item>Select Incident Type</item>
+        <item>Murder</item>
+        <item>Sexual Crimes</item>
+        <item>Assault</item>
+        <item>Robbery</item>
+        <item>Child Abuse and Neglect</item>
+    </string-array>
+    <string-array name="drugs" translatable="false">
+        <item>Select Incident Type</item>
+        <item>Drug Possession</item>
+        <item>Drug Sales</item>
+        <item>Illegal Gun or Ammunition</item>
+        <item>Gun Firing</item>
+    </string-array>
+    <string-array name="corruption">
+        <item>Select Incident Type</item>
+        <item>Bribery</item>
+        <item>Fraud</item>
+        <item>Misuse of Public Property</item>
+    </string-array>
+    <string-array name="property" translatable="false">
+        <item>Select Incident Type</item>
+        <item>Burglary</item>
+        <item>Arson</item>
+        <item>Vandalism</item>
+        <item>Malicious Damage</item>
+        <item>Theft</item>
+    </string-array>
+    <string-array name="vehicle"  translatable="false">
+        <item>Select Incident Type</item>
+        <item>Theft</item>
+        <item>Hijacking</item>
+        <item>Breaking</item>
+    </string-array>
+    <string-array name="protest" translatable="false">
+        <item>Select Incident Type</item>
+        <item>Protest</item>
+        <item>Violent Protest</item>
+    </string-array>
+    <string-array name="traffic" translatable="false">
+        <item>Select Incident Type</item>
+        <item>Accident</item>
+        <item>Traffic Lights</item>
+        <item>Drunk Under Influence</item>
+        <item>Incidents</item>
+    </string-array>
+    <string-array name="bylaw" translatable="false">
+        <item>Select Incident Type</item>
+        <item>Public Amenities</item>
+        <item>Public Order and Public Places</item>
+        <item>Street Trading</item>
+        <item>Electricity / Water</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="other" translatable="false">
+      <item>Other</item>
+    </string-array>
+    <string-array name="test" translatable="false">
+      <item>Test</item>
+    </string-array>
+
+</resources>

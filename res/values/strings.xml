@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Tshwane Safety</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="recordBtn">Record</string>
+    <string name="stopRecordBtn">Stop</string>
+    <string name="playBtn">Play</string>
+    <string name="saveRecordError">Error saving audio record</string>
+    <string name="videoRecordingError">Recording video failed</string>
+    <string name="noExtStorageAvailable">storage is unavailable</string>
+    <string name="take_picture">Take Picture</string>
+    <string name="from_file">Attach Image</string>
+    <string name="album_name">MySafety</string>
+    <string name="error">Error</string>
+    <string name="share">Share</string>
+    <string name="clearlist">Clear</string>
+    <string name="refresh">Refresh</string>
+    <string name="erd_title">Rate this app</string>
+    <string name="erd_message">Hi, take a minute to rate this app and help support to improve more new features. ;)</string>
+    <string name="perm_message">You dont have permissions ;)</string>
+    <string name="erd_no_thanks">No, thanks.</string>
+    <string name="erd_remind_me_later">Remind me later.</string>
+    <string name="erd_rate_now">Rate now.</string>
+    <string name="title_activity_case_history">Case History</string>
+    <string name="placeholder_empty">No record found</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_crime_history_tab">Crime History</string>
+    <string name="lat">Lat:</string>
+    <string name="lot">Lon:</string>
+    <string name="subtitle">SubTitle</string>
+    <string name="datetime">Date and Time:</string>
+    <string name="placeholder_offline">No Internet connection available</string>
+    <string name="specific_incident_location">specific incident location</string>
+    <string name="status_new">New</string>
+    <string name="contact_crime">Contact Crime</string>
+    <string name="drugs_guns">Drugs/Guns</string>
+    <string name="corruption">Corruption</string>
+    <string name="property_crime">Property Crime</string>
+    <string name="vehicle_crime">Vehicle Crime</string>
+    <string name="protest_action">Protest Action</string>
+    <string name="traffic_incident">Traffic Incident</string>
+    <string name="bylaw_infringement">Bylaw Infringement</string>
+    <string name="case_status_set_to_new">Case status set to new</string>
+    <string name="to_address">support@pulego.co.za</string>
+    <string name="send">Send</string>
+    <string name="crime_report_details">Crime Report Details</string>
+    <string name="reporting">Reporting</string>
+    <string name="anonymous_tip_off">Anonymous tip off?</string>
+    <string name="provide_details">provide details here</string>
+    <string name="record_audio">Record Audio</string>
+    <string name="media_start">start</string>
+    <string name="media_play">play</string>
+    <string name="record_video">Record Video</string>
+    <string name="contact_number_hint">contact number</string>
+    <string name="your_name_hint">your name</string>
+    <string name="report_button_text">Report</string>
+    <string name="report_a_bug">Report a Bug</string>
+    <string name="email_subject">Subject</string>
+    <string name="email_send">Send</string>
+
+</resources>

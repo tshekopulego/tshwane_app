@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/main_color_yellow_strip"
+            android:padding="@dimen/pad_5dp"
+            android:text="Select to dial any of the following emergency numbers. Normal call rates apply."
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_14sp" >
+        </TextView>
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/pad_10dp"
+            android:layout_marginRight="@dimen/pad_10dp"
+            android:layout_marginTop="@dimen/pad_10dp"
+            android:background="@drawable/button_contact"
+            android:drawableLeft="@drawable/appicon"
+            android:gravity="left|center_vertical"
+            android:text="METRO POLICE – 012 358 7095"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_13sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/pad_10dp"
+            android:layout_marginRight="@dimen/pad_10dp"
+            android:layout_marginTop="@dimen/pad_10dp"
+            android:background="@drawable/button_contact"
+            android:drawableLeft="@drawable/appicon"
+            android:gravity="left|center_vertical"
+            android:text="METRO POLICE – 012 358 7096"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_13sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/pad_10dp"
+            android:layout_marginRight="@dimen/pad_10dp"
+            android:layout_marginTop="@dimen/pad_10dp"
+            android:background="@drawable/button_contact"
+            android:drawableLeft="@drawable/sapolice"
+            android:gravity="left|center_vertical"
+            android:text="POLICE – 10111"
+            android:textSize="@dimen/txt_13sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/pad_10dp"
+            android:layout_marginRight="@dimen/pad_10dp"
+            android:layout_marginTop="@dimen/pad_10dp"
+            android:background="@drawable/button_contact"
+            android:drawableLeft="@drawable/emergency"
+            android:gravity="left|center_vertical"
+            android:paddingTop="5dp"
+            android:text="EMERGENCY SERVICES – 10177"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_13sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/pad_10dp"
+            android:layout_marginRight="@dimen/pad_10dp"
+            android:layout_marginTop="@dimen/pad_10dp"
+            android:background="@drawable/button_contact"
+            android:drawableLeft="@drawable/emergency"
+            android:gravity="left|center_vertical"
+            android:text="EMERGENCY SERVICES – 012 310 6300"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_13sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/pad_10dp"
+            android:layout_marginRight="@dimen/pad_10dp"
+            android:layout_marginTop="@dimen/pad_10dp"
+            android:background="@drawable/button_contact"
+            android:drawableLeft="@drawable/emergency"
+            android:gravity="left|center_vertical"
+            android:text="EMERGENCY SERVICES – 012 310 6400"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_13sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</ScrollView>

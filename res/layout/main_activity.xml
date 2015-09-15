@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/main_color_yellow_strip"
+            android:padding="@dimen/pad_5dp"
+            android:text="Report incident around you!"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_14sp" >
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/contactcrime"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_layer"
+                android:drawableTop="@drawable/contactcrime"
+                android:onClick="onClick"
+                android:padding="5dp"
+                android:tag="1"
+                android:text="@string/contact_crime" />
+
+            <Button
+                android:id="@+id/drugs"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_layer"
+                android:drawableTop="@drawable/drugsguns72"
+                android:onClick="onClick"
+                android:padding="5dp"
+                android:tag="2"
+                android:text="@string/drugs_guns" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/corruption"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_layer"
+                android:drawableTop="@drawable/corruption72"
+                android:onClick="onClick"
+                android:padding="5dp"
+                android:tag="3"
+                android:text="@string/corruption" />
+
+            <Button
+                android:id="@+id/property"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_layer"
+                android:drawableTop="@drawable/property72"
+                android:onClick="onClick"
+                android:padding="5dp"
+                android:tag="4"
+                android:text="@string/property_crime" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/vehicle"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_layer"
+                android:drawableTop="@drawable/vehicle72"
+                android:onClick="onClick"
+                android:padding="5dp"
+                android:tag="5"
+                android:text="@string/vehicle_crime" />
+
+            <Button
+                android:id="@+id/protestaction"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_layer"
+                android:drawableTop="@drawable/public72"
+                android:onClick="onClick"
+                android:padding="5dp"
+                android:tag="6"
+                android:text="@string/protest_action" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/traffic"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_layer"
+                android:drawableTop="@drawable/traffic72"
+                android:onClick="onClick"
+                android:padding="5dp"
+                android:tag="7"
+                android:text="@string/traffic_incident" />
+
+            <Button
+                android:id="@+id/bylaw"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_layer"
+                android:drawableTop="@drawable/bylaw72"
+                android:onClick="onClick"
+                android:padding="5dp"
+                android:tag="8"
+                android:text="@string/bylaw_infringement" />
+        </LinearLayout>
+
+        <include
+            android:id="@+id/container_offline"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/placeholder_offline"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>

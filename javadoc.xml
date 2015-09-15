@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="javadoc">
+    <target name="javadoc">
+        <javadoc access="private" author="true" classpath="D:\Android\android-sdk\platforms\android-18\android.jar;../google-play-services_lib/libs/google-play-services.jar;libs/android-support-v4.jar;../google-play-services_lib/bin/google-play-services_lib.jar" destdir="doc" nodeprecated="false" nodeprecatedlist="false" noindex="false" nonavbar="false" notree="false" packagenames="com.realestate.model,com.realestate,com.realestate.ui,com.google.android.gms,com.realestate.custom,com.realestate.utils" source="1.6" sourcepath="gen;src" splitindex="true" use="true" version="true"/>
+    </target>
+</project>

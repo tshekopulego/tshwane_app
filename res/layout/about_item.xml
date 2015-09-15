@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/list_selector" >
+
+    <TextView
+        android:id="@+id/aboutitem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/list_selector"
+        android:drawablePadding="@dimen/pad_15dp"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/pad_10dp"
+        android:paddingLeft="@dimen/pad_15dp"
+        android:paddingTop="@dimen/pad_10dp"
+        android:text="@string/app_name"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="@dimen/txt_16sp" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawablePadding="@dimen/pad_15dp"
+        android:gravity="right|center_vertical"
+        android:paddingBottom="@dimen/pad_10dp"
+        android:paddingRight="@dimen/pad_15dp"
+        android:paddingTop="@dimen/pad_10dp"
+        android:textColor="@color/red"
+        android:textColorHint="@color/black"
+        android:textSize="@dimen/txt_13sp"
+        android:background="@drawable/list_selector" >
+    </TextView>
+
+</LinearLayout>

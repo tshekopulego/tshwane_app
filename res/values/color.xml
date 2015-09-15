@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="red">#f14242</color>
+    <color name="transparent">#00000000</color>
+    <color name="main_color_gray_dk">#4e4c4c</color>
+    <color name="main_color_gray">#6d6f70</color>
+    <color name="gray_light">#c0c1c1</color>
+    <color name="main_color_green">#549e3b</color>
+    <color name="main_color_yellow">#FFE400</color>
+    <color name="blue_lt">#33b5e5</color>
+    <color name="metro_green">#549e3b</color>
+    <color name="main_color_yellow_strip">#6b8e23</color>
+    
+    <!-- <color name="metro_green">#549e3b</color> -->
+
+</resources>
