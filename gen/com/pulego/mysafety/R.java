@@ -773,6 +773,7 @@ containing a value of this type.
         public static final int accept=0x7f070003;
         public static final int action_settings=0x7f07003e;
         public static final int album_name=0x7f070031;
+        public static final int alert_crime_scene=0x7f070060;
         public static final int anonymous_tip_off=0x7f070054;
         public static final int app_name=0x7f070000;
         public static final int bylaw_infringement=0x7f07004e;
@@ -899,6 +900,7 @@ containing a value of this type.
         public static final int drugs_guns=0x7f070048;
         public static final int email_send=0x7f07005f;
         public static final int email_subject=0x7f07005e;
+        public static final int enable_internet_connection=0x7f070061;
         public static final int erd_message=0x7f070037;
         public static final int erd_no_thanks=0x7f070039;
         public static final int erd_rate_now=0x7f07003b;

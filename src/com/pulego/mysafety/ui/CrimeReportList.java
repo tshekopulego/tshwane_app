@@ -62,7 +62,7 @@ public class CrimeReportList extends CustomFragment {
 
 		}
 
-		emptyMessage = (View) v.findViewById(R.id.container_empty);
+		emptyMessage = v.findViewById(R.id.container_empty);
 
 		mydb = new DBHelper(v.getContext());
 

@@ -91,7 +91,7 @@ public class MainActivity extends CustomActivity {
 	Editor editor;
 
 	// give your server registration url here
-	static String SERVER_URL; /// admin/registerdevice.php";
+	static String SERVER_URL; 
 
 	static final String DISPLAY_MESSAGE_ACTION = "com.pulego.mysafety.DISPLAY_MESSAGE";
 
@@ -162,7 +162,7 @@ public class MainActivity extends CustomActivity {
 
 			// set dialog message
 			alertDialogBuilder
-				.setMessage("Please enable your internet connection and try again!")
+				.setMessage(R.string.enable_internet_connection)
 				.setCancelable(false)
 				.setPositiveButton("Ok",new DialogInterface.OnClickListener() {
 					public void onClick(DialogInterface dialog,int id) {

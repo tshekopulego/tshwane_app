@@ -60,5 +60,6 @@
     <string name="email_subject">Subject</string>
     <string name="email_send">Send</string>
     <string name="alert_crime_scene">Are you currently at the crime scene?</string>
+    <string name="enable_internet_connection">Please enable your internet connection and try again!</string>
 
 </resources>

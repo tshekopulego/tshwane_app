@@ -383,6 +383,7 @@ int raw gtm_analytics 0x7f050000
 int string accept 0x7f070003
 int string action_settings 0x7f07003e
 int string album_name 0x7f070031
+int string alert_crime_scene 0x7f070060
 int string anonymous_tip_off 0x7f070054
 int string app_name 0x7f070000
 int string bylaw_infringement 0x7f07004e
@@ -432,6 +433,7 @@ int string drawer_open 0x7f070027
 int string drugs_guns 0x7f070048
 int string email_send 0x7f07005f
 int string email_subject 0x7f07005e
+int string enable_internet_connection 0x7f070061
 int string erd_message 0x7f070037
 int string erd_no_thanks 0x7f070039
 int string erd_rate_now 0x7f07003b
