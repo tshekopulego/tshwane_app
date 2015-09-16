@@ -148,6 +148,7 @@ public class ReportIt extends CustomActivity {
 	private final int CAMERA_CAPTURE_VIDEO_REQUEST_CODE = 200;
 	public static final int MEDIA_TYPE_IMAGE = 1;
 	public final int MEDIA_TYPE_VIDEO = 2;
+	
 	// flag for Internet connection status
 	Boolean isInternetPresent = false;
 
@@ -420,7 +421,7 @@ public class ReportIt extends CustomActivity {
 			}
 
 			AlertDialog.Builder builder = new AlertDialog.Builder(this);
-			builder.setMessage("Are you currently at the crime scene?").setPositiveButton("Yes", dialogClickListener)
+			builder.setMessage(R.string.alert_crime_scene).setPositiveButton("Yes", dialogClickListener)
 					.setNegativeButton("No", dialogClickListener).show();
 
 		}
