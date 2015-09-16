@@ -59,5 +59,6 @@
     <string name="report_a_bug">Report a Bug</string>
     <string name="email_subject">Subject</string>
     <string name="email_send">Send</string>
+    <string name="alert_crime_scene">Are you currently at the crime scene?</string>
 
 </resources>
