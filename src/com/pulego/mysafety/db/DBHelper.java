@@ -39,11 +39,12 @@ public class DBHelper extends SQLiteOpenHelper {
 	public static final String CRIMEREPORT_COLUMN_LOT = "lot";
 	public static final String CRIMEREPORT_COLUMN_STATUS = "status";
 	public static final String CRIMEREPORT_COLUMN_CREATEDON = "createdon";
+	public static final String CRIMEREPORT_COLUMN_CASENUM = "casenum";
 
 	private SQLiteDatabase db;
 
 	public DBHelper(Context context) {
-		super(context, DATABASE_NAME, null, 1);
+		super(context, DATABASE_NAME, null, 2);
 	}
 
 	@Override
@@ -53,7 +54,7 @@ public class DBHelper extends SQLiteOpenHelper {
 				+ "(id INTEGER primary key,title TEXT,uid TEXT,message TEXT,pictureurl TEXT,notificationtype TEXT,createdon DATETIME DEFAULT CURRENT_TIMESTAMP)");
 
 		db.execSQL("create table crimereport "
-				+ "(id INTEGER primary key, title TEXT,uid TEXT,description TEXT,imageurl TEXT,audiourl TEXT,videourl TEXT,lat TEXT,lot TEXT,status TEXT,createdon DATETIME DEFAULT CURRENT_TIMESTAMP)");
+				+ "(id INTEGER primary key, title TEXT,uid TEXT,description TEXT,imageurl TEXT,audiourl TEXT,videourl TEXT,lat TEXT,lot TEXT,status TEXT,createdon DATETIME DEFAULT CURRENT_TIMESTAMP,casenum TEXT)");
 	}
 
 	@Override
@@ -86,7 +87,7 @@ public class DBHelper extends SQLiteOpenHelper {
 	}
 
 	public boolean insertCrimeReport(String uid, String title, String message, String imageurl, String audiourl,
-			String videourl, String lat, String lot, String status) {
+			String videourl, String lat, String lot, String status, String casenum) {
 
 		if (db != null && db.isOpen()) {
 			db.close();
@@ -105,6 +106,7 @@ public class DBHelper extends SQLiteOpenHelper {
 		contentValues.put("lat", lat);
 		contentValues.put("lot", lot);
 		contentValues.put("status", status);
+		contentValues.put("casenum", casenum);
 		db.insert("crimereport", null, contentValues);
 		db.close();
 
@@ -129,10 +131,11 @@ public class DBHelper extends SQLiteOpenHelper {
 		return numRows;
 	}
 	
-	public boolean updateCrimeReportStatus(String uid, String status) {
+	public boolean updateCrimeReportStatus(String uid, String status, String casenum) {
 		db = this.getWritableDatabase();
 		ContentValues contentValues = new ContentValues();
 		contentValues.put("status", status);
+		contentValues.put("casenum", casenum);
 		
 		db.update("crimereport", contentValues, "uid = ?", new String[] { uid });
 		return true;
@@ -153,6 +156,12 @@ public class DBHelper extends SQLiteOpenHelper {
 		db = this.getWritableDatabase();
 		Log.d("db id is ", id);
 		return db.delete("notification", "uid = ?", new String[] { id });
+	}
+	
+	public Integer deleteNotificationByTitle(String title) {
+		db = this.getWritableDatabase();
+		Log.d("db id is ", title);
+		return db.delete("notification", "title = ?", new String[] { title });
 	}
 
 	public Integer deleteAllNotification() {
@@ -181,12 +190,15 @@ public class DBHelper extends SQLiteOpenHelper {
 
 				cursor.moveToFirst();
 
-				crimeReport = new CrimeReport(cursor.getString(cursor.getColumnIndex("uid")),
+				crimeReport = new CrimeReport(
+						cursor.getString(cursor.getColumnIndex("uid")),
 						cursor.getString(cursor.getColumnIndex("title")),
 						cursor.getString(cursor.getColumnIndex("createdon")),
 						cursor.getString(cursor.getColumnIndex("description")),
 						cursor.getString(cursor.getColumnIndex("status")),
-						cursor.getString(cursor.getColumnIndex("lat")), cursor.getString(cursor.getColumnIndex("lot")));
+						cursor.getString(cursor.getColumnIndex("lat")), 
+						cursor.getString(cursor.getColumnIndex("lot")),
+						cursor.getString(cursor.getColumnIndex("casenum")));
 
 		
 
@@ -216,7 +228,8 @@ public class DBHelper extends SQLiteOpenHelper {
 					res.getString(res.getColumnIndex(CRIMEREPORT_COLUMN_LAT)),
 					res.getString(res.getColumnIndex(CRIMEREPORT_COLUMN_LOT)),
 					res.getString(res.getColumnIndex(CRIMEREPORT_COLUMN_STATUS)),
-					res.getString(res.getColumnIndex(CRIMEREPORT_COLUMN_CREATEDON)) });
+					res.getString(res.getColumnIndex(CRIMEREPORT_COLUMN_CREATEDON)),
+					res.getString(res.getColumnIndex(CRIMEREPORT_COLUMN_CASENUM))});
 
 			res.moveToNext();
 		}

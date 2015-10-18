@@ -89,14 +89,14 @@ public class SubmitReportTaskAsyncTask extends AsyncTask<String, Void, Boolean> 
 				if (success == 1) {
 
 					// inserted the record to local db
-//					mydb.insertCrimeReport(json.getString(TAG_UID),
-//							categoryType, desc, imageloc, audioloc, videoloc,
-//							lat, lot, "New");
+					mydb.insertCrimeReport(json.getString(TAG_UID),
+							categoryType, desc, imageloc, audioloc, videoloc,
+							lat, lot, "New",null);
 
 					// log to db
-//					boolean isInserted = mydb.insertNotification(categoryType
-//							+ " - New Case", json.getString(TAG_UID),
-//							"Case status set to new", null, "New");
+					boolean isInserted = mydb.insertNotification(categoryType
+							+ " - New Case", json.getString(TAG_UID),
+							"Case status set to new", null, "New");
 
 					return true;
 				} else

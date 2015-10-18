@@ -37,7 +37,7 @@ public class CoSafetyApplication extends Application {
 	}
 
 	public static String serverURL() {
-		return "http://www.tshwanesafety.co.za";
+		return "http://test.tshwanesafety.co.za";
 
 	}
 }

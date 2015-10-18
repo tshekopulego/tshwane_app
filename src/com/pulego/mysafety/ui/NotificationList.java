@@ -14,6 +14,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
@@ -88,6 +89,8 @@ public class NotificationList extends CustomFragment {
 				startActivity(i);
 			}
 		});
+		
+		
 
 		return v;
 	}
@@ -201,6 +204,20 @@ public class NotificationList extends CustomFragment {
 			SmartImageView img = (SmartImageView) convertView.findViewById(R.id.loaderImageView);
 
 			img.setImageUrl(d[3]);
+			
+			Button b2 = (Button) convertView.findViewById(R.id.deleteNotButton);
+	        b2.setTag(position);
+	        b2.setOnClickListener(new OnClickListener() {
+
+	            @Override
+	            public void onClick(View arg0) {
+	               
+	                int pos = Integer.parseInt(arg0.getTag().toString());
+	                String[] d = getItem(pos);
+	                mydb.deleteNotificationByTitle(d[0]);
+	                fList.remove(pos);
+	                NotificationsAdapter.this.notifyDataSetChanged();            }
+	        });
 
 			return convertView;
 		}

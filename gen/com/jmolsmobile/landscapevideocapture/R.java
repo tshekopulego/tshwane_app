@@ -18,17 +18,17 @@ public final class R {
 		public static final int btn_capturevideo_pressed = 0x7f020008;
 		public static final int btn_capturevideo_selected = 0x7f020009;
 		public static final int btn_decline = 0x7f02000a;
-		public static final int img_rotate_device = 0x7f02004e;
-		public static final int states_btn_acceptdecline = 0x7f020065;
-		public static final int states_btn_capture = 0x7f020066;
+		public static final int img_rotate_device = 0x7f02004f;
+		public static final int states_btn_acceptdecline = 0x7f020066;
+		public static final int states_btn_capture = 0x7f020067;
 	}
 	public static final class id {
-		public static final int videocapture_acceptbtn_iv = 0x7f0d0079;
-		public static final int videocapture_container_rl = 0x7f0d0075;
-		public static final int videocapture_declinebtn_iv = 0x7f0d007a;
-		public static final int videocapture_preview_iv = 0x7f0d0077;
-		public static final int videocapture_preview_sv = 0x7f0d0076;
-		public static final int videocapture_recordbtn_iv = 0x7f0d0078;
+		public static final int videocapture_acceptbtn_iv = 0x7f0d007a;
+		public static final int videocapture_container_rl = 0x7f0d0076;
+		public static final int videocapture_declinebtn_iv = 0x7f0d007b;
+		public static final int videocapture_preview_iv = 0x7f0d0078;
+		public static final int videocapture_preview_sv = 0x7f0d0077;
+		public static final int videocapture_recordbtn_iv = 0x7f0d0079;
 		public static final int videocapture_rotate_iv = 0x7f0d001e;
 		public static final int videocapture_videocaptureview_vcv = 0x7f0d001f;
 	}

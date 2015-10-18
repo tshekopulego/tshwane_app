@@ -56,7 +56,7 @@ public class GcmMessageHandler extends IntentService {
 		String pictureurl = extras.getString("pictureurl");
 		String uid = extras.getString("uid");
 
-		if (title != null && message != null) {
+		if (title != null && message != null && casenum == null) {
 
 			mydb.insertNotification(title, null, message, null, pictureurl);
 
@@ -72,11 +72,11 @@ public class GcmMessageHandler extends IntentService {
 
 			GcmBroadcastReceiver.completeWakefulIntent(intent);
 
-		} else if (uid != null) {
+		} else if (casenum != null) {
 
 			mydb.insertNotification(title, uid, message, messageType, null);
 
-			mydb.updateCrimeReportStatus(uid, status);
+			mydb.updateCrimeReportStatus(uid, status,casenum);
 
 			CrimeReport crimeReport = mydb.getCrimeReport(uid);
 
@@ -85,9 +85,9 @@ public class GcmMessageHandler extends IntentService {
 				Intent notificationIntent = new Intent(this, CrimeReportDetail.class).putExtra("uid", crimeReport.uid)
 						.putExtra("title", crimeReport.title).putExtra("description", crimeReport.description)
 						.putExtra("status", crimeReport.status).putExtra("createdon", crimeReport.datetime)
-						.putExtra("lat", crimeReport.lat).putExtra("lot", crimeReport.lot);
+						.putExtra("lat", crimeReport.lat).putExtra("lot", crimeReport.lot).putExtra("casenum", casenum);
 
-				generateNotification(this, extras.getString("title"), extras.getString("message"), null,
+				generateNotification(this, extras.getString("title") + " - " + extras.getString("casenum"), extras.getString("message"), null,
 						notificationIntent);
 			}
 
@@ -118,7 +118,7 @@ public class GcmMessageHandler extends IntentService {
 		// hide the notification after its selected
 		noti.flags |= Notification.FLAG_AUTO_CANCEL;
 
-		notificationManager.notify(NOTIFICATION_ID, mBuilder.build());
+		notificationManager.notify(NOTIFICATION_ID, noti);
 
 	}
 

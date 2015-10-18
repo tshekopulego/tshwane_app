@@ -8,8 +8,9 @@ public class CrimeReport {
 	public String description;
 	public String status;
 	public String lat,lot;
+	public String casenum;
 
-	public CrimeReport(String _uid,String _title,String _datetime, String _description, String _status,String _lat,String _lot) {
+	public CrimeReport(String _uid,String _title,String _datetime, String _description, String _status,String _lat,String _lot,String _casenum) {
 		
 		uid = _uid;
 		title = _title;
@@ -18,6 +19,7 @@ public class CrimeReport {
 		status = _status;
 		lat = _lat;
 		lot = _lot;
+		casenum = _casenum;
 		
 	}
 
@@ -52,5 +54,10 @@ public class CrimeReport {
 	public String getLot()
 	{
 		return lot;
+	}
+	
+	public String getCaseNum()
+	{
+		return casenum;
 	}
 }
