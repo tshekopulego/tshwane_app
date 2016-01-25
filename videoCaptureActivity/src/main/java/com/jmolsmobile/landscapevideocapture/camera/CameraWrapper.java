@@ -36,6 +36,7 @@ import java.util.List;
 public class CameraWrapper {
 
     private Camera     mCamera     = null;
+    
     private Parameters mParameters = null;
 
     public Camera getCamera() {
