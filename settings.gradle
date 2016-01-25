@@ -1,0 +1,2 @@
+include ':videoCaptureActivity'
+include ':mySafety2'

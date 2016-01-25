@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/Users/mac/AndroidStudioProjects/CoSafety/slidingTabs/src/main/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="red">#f00</color>
+    <drawable name="semi_black">#80000000</drawable>
+    <!-- From: file:/Users/mac/AndroidStudioProjects/CoSafety/slidingTabs/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="back">Back</string>
+    <string name="clear">Clear</string>
+    <string name="main_label">Hello <u>th<ignore>e</ignore>re</u>, <i>you</i> <b>Activity</b>!</string>
+    <string name="skeleton_app">Skeleton App</string>
+    <!-- From: file:/Users/mac/AndroidStudioProjects/CoSafety/slidingTabs/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="ActionButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">@style/TextAppearance.ActionButton</item>
+    </style>
+    <style name="TextAppearance" parent="android:TextAppearance">
+    </style>
+    <style name="TextAppearance.ActionButton">
+        <item name="android:textStyle">italic</item>
+    </style>
+</resources>

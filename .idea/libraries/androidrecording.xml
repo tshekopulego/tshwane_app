@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="androidrecording">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/mySafety2/libs/androidrecording.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

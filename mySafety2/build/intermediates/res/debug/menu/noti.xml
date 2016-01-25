@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+	<item
+        android:id="@+id/menu_share"
+        android:icon="@drawable/ic_share"
+        android:showAsAction="always"
+        android:title="@string/share"
+        android:actionProviderClass=
+                "android.widget.ShareActionProvider"
+        />
+
+</menu>
+<!-- From: file:/Users/mac/AndroidStudioProjects/CoSafety/mySafety2/src/main/res/menu/noti.xml -->

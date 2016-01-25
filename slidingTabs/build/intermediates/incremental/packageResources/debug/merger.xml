@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/Users/mac/AndroidStudioProjects/CoSafety/slidingTabs/src/main/res"><file name="violet" path="/Users/mac/AndroidStudioProjects/CoSafety/slidingTabs/src/main/res/drawable/violet.jpg" qualifiers="" type="drawable"/><file name="skeleton_activity" path="/Users/mac/AndroidStudioProjects/CoSafety/slidingTabs/src/main/res/layout/skeleton_activity.xml" qualifiers="" type="layout"/><file path="/Users/mac/AndroidStudioProjects/CoSafety/slidingTabs/src/main/res/values/colors.xml" qualifiers=""><color name="red">#f00</color><drawable name="semi_black">#80000000</drawable></file><file path="/Users/mac/AndroidStudioProjects/CoSafety/slidingTabs/src/main/res/values/strings.xml" qualifiers=""><string name="skeleton_app">Skeleton App</string><string name="back">Back</string><string name="clear">Clear</string><string name="main_label">Hello <u>th<ignore>e</ignore>re</u>, <i>you</i> <b>Activity</b>!</string></file><file path="/Users/mac/AndroidStudioProjects/CoSafety/slidingTabs/src/main/res/values/styles.xml" qualifiers=""><style name="TextAppearance" parent="android:TextAppearance">
+    </style><style name="TextAppearance.ActionButton">
+        <item name="android:textStyle">italic</item>
+    </style><style name="ActionButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">@style/TextAppearance.ActionButton</item>
+    </style></file></source><source path="/Users/mac/AndroidStudioProjects/CoSafety/slidingTabs/build/generated/res/rs/debug"/><source path="/Users/mac/AndroidStudioProjects/CoSafety/slidingTabs/build/generated/res/generated/debug"/></dataSet><dataSet config="debug"><source path="/Users/mac/AndroidStudioProjects/CoSafety/slidingTabs/src/debug/res"/></dataSet><mergedItems/></merger>

@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+<!-- 	<item
+        android:id="@+id/menu_nearby"
+        android:icon="@drawable/ic_action_maps_place"
+        android:showAsAction="always"
+        android:title="Nearby Services"
+       
+        />
+     -->
+</menu>
+<!-- From: file:/Users/mac/AndroidStudioProjects/CoSafety/mySafety2/src/main/res/menu/main_menu.xml -->

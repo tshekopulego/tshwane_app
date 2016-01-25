@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/metro_green"
+    android:orientation="vertical"
+    >
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_color_yellow_strip"
+        android:drawableRight="@drawable/ic_list"
+        android:padding="@dimen/pad_5dp"
+        android:text="Location Details"
+        android:textColor="@color/white"
+        android:textSize="@dimen/txt_14sp"
+         >
+    </TextView>
+
+    <!-- Name Label -->
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+        android:layout_marginTop="10dip"
+        android:text="Name:"
+        android:textStyle="bold"
+        android:padding="10dip"  />
+
+    <!-- Name Value -->
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:padding="10dip" />
+
+    <!-- Address Label -->
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+        android:layout_marginTop="15dip"
+        android:text="Address:"
+        android:textStyle="bold"
+        android:padding="10dip"  />
+
+    <!-- Address Value -->
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dip"  />
+
+    <!-- Phone Number Label -->
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:padding="10dip"  />
+
+    <!-- Location Value -->
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+        android:layout_marginTop="15dip"
+        android:padding="10dip"  />
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_color_yellow_strip"
+        android:drawableRight="@drawable/ic_list"
+        android:padding="@dimen/pad_5dp"
+        android:text="Options"
+        android:textColor="@color/white"
+        android:textSize="@dimen/txt_14sp"
+         >
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout02"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp" >
+
+        <Button
+            android:id="@+id/callNumber"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_submit"
+            android:text="Call" >
+        </Button>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/navigator"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_submit"
+            android:text="Navigate" >
+        </Button>
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/Users/mac/AndroidStudioProjects/CoSafety/mySafety2/src/main/res/layout/mapdetail.xml -->

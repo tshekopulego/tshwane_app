@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/sd"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingRight="2dp" >
+
+            <Button
+                android:id="@+id/btnpolice"
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/button_layer"
+                android:drawableStart="@drawable/police"
+                android:drawableLeft="@drawable/police"
+                android:onClick="onClick"
+                android:padding="5dp" />
+
+            <Button
+                android:id="@+id/btnhospital"
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/btnpolice"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/button_layer"
+                android:drawableStart="@drawable/ambulance"
+                android:drawableLeft="@drawable/ambulance"
+                android:onClick="onClick"
+                android:padding="5dp" />
+
+            <Button
+                android:id="@+id/btnfiredept"
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/btnhospital"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/button_layer"
+                android:drawableStart="@drawable/firedept"
+                android:drawableLeft="@drawable/firedept"
+                android:onClick="onClick"
+                android:padding="2dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

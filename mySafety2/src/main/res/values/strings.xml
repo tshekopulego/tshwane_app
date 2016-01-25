@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Tshwane Safety</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="recordBtn">Record</string>
+    <string name="stopRecordBtn">Stop</string>
+    <string name="playBtn">Play</string>
+    <string name="saveRecordError">Error saving audio record</string>
+    <string name="videoRecordingError">Recording video failed</string>
+    <string name="noExtStorageAvailable">storage is unavailable</string>
+    <string name="take_picture">Capture Image</string>
+    <string name="from_file">Attach Image</string>
+    <string name="album_name">MySafety</string>
+    <string name="error">Error</string>
+    <string name="share">Share</string>
+    <string name="refresh">Refresh</string>
+    <string name="erd_title">Rate this app</string>
+    <string name="erd_message">Hi, take a minute to rate this app and help support to improve more new features. ;)</string>
+    <string name="erd_no_thanks">No, thanks.</string>
+    <string name="erd_remind_me_later">Remind me later.</string>
+    <string name="erd_rate_now">Rate now.</string>
+    <string name="title_activity_case_history">Case History</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_crime_history_tab">Crime History</string>
+    <string name="lat">Lat:</string>
+    <string name="lot">Lon:</string>
+    <string name="subtitle">SubTitle</string>
+    <string name="datetime">Date and Time:</string>
+
+</resources>

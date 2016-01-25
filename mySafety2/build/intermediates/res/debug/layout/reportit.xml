@@ -1,0 +1,303 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ac"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_cart"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_color_yellow_strip"
+        android:drawableRight="@drawable/ic_list"
+        android:padding="@dimen/pad_5dp"
+        android:text="Crime Report Details"
+        android:textColor="@color/white"
+        android:textSize="@dimen/txt_14sp" >
+    </TextView>
+
+    <ScrollView
+        android:id="@+id/ad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:id="@+id/l"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5.0dip"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="@dimen/pad_10dp" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="1dp" >
+
+                <TextView
+                    android:id="@+id/crimeCategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:padding="5dp"
+                    android:text="Reporting"
+                    android:textColor="@color/black" />
+
+                <CheckBox
+                    android:id="@+id/anon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:text="Anonymous tip off?"
+                    android:textColor="#B00000" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/categoryLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/area"
+                android:background="@drawable/button_layer"
+                android:padding="0dp" >
+
+                <Spinner
+                    android:id="@+id/area"
+                    style="@style/spinner_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/category"
+                    android:layout_margin="5.0dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/descLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/categoryLayout"
+                android:padding="3dp" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <EditText
+                        android:id="@+id/edDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        android:background="@drawable/button_layer"
+                        android:hint="Provide details here"
+                        android:padding="10dp"
+                        android:textColorHint="#000" />
+
+                    <LinearLayout
+                        android:id="@+id/pictureadd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:background="@drawable/button_layer"
+                        android:clickable="true"
+                        android:orientation="horizontal"
+                        android:padding="5dp" >
+
+                        <ImageView
+                            android:id="@+id/photo"
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/camera" />
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="5dp"
+                            android:text="Add Picture" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/audiorec"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:background="@drawable/button_layer"
+                        android:orientation="horizontal"
+                        android:padding="5dp" >
+
+                        <ImageView
+                            android:id="@+id/img"
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/mic" />
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="5dp"
+                            android:text="Add Audio" />
+
+                        <Button
+                            android:id="@+id/start"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|center_vertical"
+                            android:layout_margin="2dp"
+                            android:background="@drawable/button_layer"
+                            android:text="start" />
+
+                        <Button
+                            android:id="@+id/play"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|center_vertical"
+                            android:layout_margin="2dp"
+                            android:background="@drawable/button_layer"
+                            android:text="play" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/videorec"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:background="@drawable/button_layer"
+                        android:clickable="true"
+                        android:orientation="horizontal"
+                        android:padding="5dp" >
+
+                        <ImageView
+                            android:id="@+id/iv_thumbnail"
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/video" />
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="5dp"
+                            android:text="Add Video" />
+
+                        <Button
+                            android:id="@+id/videostart"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|center_vertical"
+                            android:layout_margin="2dp"
+                            android:background="@drawable/button_layer"
+                            android:text="start" />
+
+                        <Button
+                            android:id="@+id/videoplay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|center_vertical"
+                            android:layout_margin="2dp"
+                            android:background="@drawable/button_layer"
+                            android:text="play" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/pad_2dp"
+                android:gravity="center_vertical" >
+
+                <LinearLayout
+                    android:id="@+id/lla"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:padding="1dp" >
+
+                        <EditText
+                            android:id="@+id/edLocation"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_margin="2dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/button_layer"
+                            android:ems="10"
+                            android:hint="Specific incident location"
+                            android:inputType="text"
+                            android:padding="10dp"
+                            android:textColorHint="#000"
+                            android:textSize="12dp" />
+
+                        <EditText
+                            android:id="@+id/edMobileNo"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_margin="2dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/button_layer"
+                            android:ems="10"
+                            android:hint="contact number"
+                            android:inputType="phone"
+                            android:maxLength="10"
+                            android:padding="10dp"
+                            android:textColorHint="#000"
+                            android:textSize="12dp" />
+
+                        <EditText
+                            android:id="@+id/edName"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_margin="2dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/button_layer"
+                            android:ems="10"
+                            android:hint="Your name"
+                            android:padding="10dp"
+                            android:textColorHint="#000"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/gray_cart"
+                        android:gravity="center"
+                        android:padding="10dip" >
+
+                        <Button
+                            android:id="@+id/btnSubmit"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/button_submit"
+                            android:gravity="center"
+                            android:text="Report"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout><!-- From: file:/Users/mac/AndroidStudioProjects/CoSafety/mySafety2/src/main/res/layout/reportit.xml -->

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" >
+
+    <gradient
+        android:angle="270"
+        android:endColor="#FFE400"
+        android:startColor="#FFE400" />
+
+    <corners android:radius="3dp" />
+
+    <stroke
+        android:width="2px"
+        android:color="#FFE400" />
+    
+</shape><!-- From: file:/Users/mac/AndroidStudioProjects/CoSafety/mySafety2/src/main/res/drawable/button_submit.xml -->

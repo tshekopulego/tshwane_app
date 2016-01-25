@@ -1,0 +1,86 @@
+-injars /Users/mac/AndroidStudioProjects/CoSafety/mySafety2/build/intermediates/multi-dex/debug/allclasses.jar
+-outjars /Users/mac/AndroidStudioProjects/CoSafety/mySafety2/build/intermediates/multi-dex/debug/componentClasses.jar
+
+-libraryjars /Users/mac/Library/Android/sdk/build-tools/22.0.1/lib/shrinkedAndroid.jar
+
+-forceprocessing
+-dontoptimize
+-dontobfuscate
+-dontpreverify
+-dontwarn
+-printconfiguration /Users/mac/AndroidStudioProjects/CoSafety/mySafety2/build/intermediates/multi-dex/debug/components.flags
+
+
+-keep class com.pulego.mysafety.CoSafetyApplication {
+    <init>();
+    void attachBaseContext(android.content.Context);
+}
+
+-keep class com.pulego.mysafety.SplashScreen {
+    <init>();
+}
+
+-keep class com.pulego.mysafety.MainActivity {
+    <init>();
+}
+
+-keep class com.pulego.mysafety.ReportIt {
+    <init>();
+}
+
+-keep class com.pulego.mysafety.MapViewActivity {
+    <init>();
+}
+
+-keep class com.pulego.mysafety.NotificationListActivity {
+    <init>();
+}
+
+-keep class com.pulego.mysafety.NotificationDetail {
+    <init>();
+}
+
+-keep class com.pulego.mysafety.CrimeReportDetail {
+    <init>();
+}
+
+-keep class com.pulego.mysafety.phoneNumberActivity {
+    <init>();
+}
+
+-keep class com.pulego.mysafety.MapDetail {
+    <init>();
+}
+
+-keep class com.jmolsmobile.landscapevideocapture.VideoCaptureActivity {
+    <init>();
+}
+
+-keep class com.pulego.mysafety.notification.GcmBroadcastReceiver {
+    <init>();
+}
+
+-keep class com.pulego.mysafety.notification.GcmMessageHandler {
+    <init>();
+}
+
+-keep class com.google.android.gms.ads.AdActivity {
+    <init>();
+}
+
+-keep class com.google.android.gms.ads.purchase.InAppPurchaseActivity {
+    <init>();
+}
+
+-keep class com.google.android.gms.wallet.EnableWalletOptimizationReceiver {
+    <init>();
+}
+
+-keep public class * extends android.app.backup.BackupAgent {
+    <init>();
+}
+
+-keep public class * extends java.lang.annotation.Annotation {
+    <fields>;
+    <methods>;
+}

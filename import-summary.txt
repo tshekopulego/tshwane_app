@@ -1,0 +1,279 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Manifest Merging:
+-----------------
+Your project uses libraries that provide manifests, and your Eclipse
+project did not explicitly turn on manifest merging. In Android Gradle
+projects, manifests are always merged (meaning that contents from your
+libraries' manifests will be merged into the app manifest. If you had
+manually copied contents from library manifests into your app manifest
+you may need to remove these for the app to build correctly.
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+From MySafety2:
+* doc/
+* doc/allclasses-frame.html
+* doc/allclasses-noframe.html
+* doc/com/
+* doc/com/google/
+* doc/com/google/android/
+* doc/com/google/android/gms/
+* doc/com/google/android/gms/R.attr.html
+* doc/com/google/android/gms/R.color.html
+* doc/com/google/android/gms/R.drawable.html
+* doc/com/google/android/gms/R.html
+* doc/com/google/android/gms/R.id.html
+* doc/com/google/android/gms/R.integer.html
+* doc/com/google/android/gms/R.string.html
+* doc/com/google/android/gms/R.styleable.html
+* doc/com/google/android/gms/class-use/
+* doc/com/google/android/gms/class-use/R.attr.html
+* doc/com/google/android/gms/class-use/R.color.html
+* doc/com/google/android/gms/class-use/R.drawable.html
+* doc/com/google/android/gms/class-use/R.html
+* doc/com/google/android/gms/class-use/R.id.html
+* doc/com/google/android/gms/class-use/R.integer.html
+* doc/com/google/android/gms/class-use/R.string.html
+* doc/com/google/android/gms/class-use/R.styleable.html
+* doc/com/google/android/gms/package-frame.html
+* doc/com/google/android/gms/package-summary.html
+* doc/com/google/android/gms/package-tree.html
+* doc/com/google/android/gms/package-use.html
+* doc/com/realestate/
+* doc/com/realestate/BuildConfig.html
+* doc/com/realestate/MainActivity.html
+* doc/com/realestate/Manifest.html
+* doc/com/realestate/Manifest.permission.html
+* doc/com/realestate/MapViewActivity.html
+* doc/com/realestate/PropertyDetail.html
+* doc/com/realestate/R.array.html
+* doc/com/realestate/R.attr.html
+* doc/com/realestate/R.color.html
+* doc/com/realestate/R.dimen.html
+* doc/com/realestate/R.drawable.html
+* doc/com/realestate/R.html
+* doc/com/realestate/R.id.html
+* doc/com/realestate/R.integer.html
+* doc/com/realestate/R.layout.html
+* doc/com/realestate/R.menu.html
+* doc/com/realestate/R.string.html
+* doc/com/realestate/R.style.html
+* doc/com/realestate/R.styleable.html
+* doc/com/realestate/SearchResultActivity.html
+* doc/com/realestate/SplashScreen.html
+* doc/com/realestate/class-use/
+* doc/com/realestate/class-use/BuildConfig.html
+* doc/com/realestate/class-use/MainActivity.html
+* doc/com/realestate/class-use/Manifest.html
+* doc/com/realestate/class-use/Manifest.permission.html
+* doc/com/realestate/class-use/MapViewActivity.html
+* doc/com/realestate/class-use/PropertyDetail.html
+* doc/com/realestate/class-use/R.array.html
+* doc/com/realestate/class-use/R.attr.html
+* doc/com/realestate/class-use/R.color.html
+* doc/com/realestate/class-use/R.dimen.html
+* doc/com/realestate/class-use/R.drawable.html
+* doc/com/realestate/class-use/R.html
+* doc/com/realestate/class-use/R.id.html
+* doc/com/realestate/class-use/R.integer.html
+* doc/com/realestate/class-use/R.layout.html
+* doc/com/realestate/class-use/R.menu.html
+* doc/com/realestate/class-use/R.string.html
+* doc/com/realestate/class-use/R.style.html
+* doc/com/realestate/class-use/R.styleable.html
+* doc/com/realestate/class-use/SearchResultActivity.html
+* doc/com/realestate/class-use/SplashScreen.html
+* doc/com/realestate/custom/
+* doc/com/realestate/custom/CustomActivity.html
+* doc/com/realestate/custom/CustomFragment.html
+* doc/com/realestate/custom/class-use/
+* doc/com/realestate/custom/class-use/CustomActivity.html
+* doc/com/realestate/custom/class-use/CustomFragment.html
+* doc/com/realestate/custom/package-frame.html
+* doc/com/realestate/custom/package-summary.html
+* doc/com/realestate/custom/package-tree.html
+* doc/com/realestate/custom/package-use.html
+* doc/com/realestate/model/
+* doc/com/realestate/model/Data.html
+* doc/com/realestate/model/class-use/
+* doc/com/realestate/model/class-use/Data.html
+* doc/com/realestate/model/package-frame.html
+* doc/com/realestate/model/package-summary.html
+* doc/com/realestate/model/package-tree.html
+* doc/com/realestate/model/package-use.html
+* doc/com/realestate/package-frame.html
+* doc/com/realestate/package-summary.html
+* doc/com/realestate/package-tree.html
+* doc/com/realestate/package-use.html
+* doc/com/realestate/ui/
+* doc/com/realestate/ui/FeedList.FeedAdapter.html
+* doc/com/realestate/ui/FeedList.html
+* doc/com/realestate/ui/LeftNavAdapter.html
+* doc/com/realestate/ui/MapViewer.html
+* doc/com/realestate/ui/Search.html
+* doc/com/realestate/ui/SearchResult.SearchAdapter.html
+* doc/com/realestate/ui/SearchResult.html
+* doc/com/realestate/ui/class-use/
+* doc/com/realestate/ui/class-use/FeedList.FeedAdapter.html
+* doc/com/realestate/ui/class-use/FeedList.html
+* doc/com/realestate/ui/class-use/LeftNavAdapter.html
+* doc/com/realestate/ui/class-use/MapViewer.html
+* doc/com/realestate/ui/class-use/Search.html
+* doc/com/realestate/ui/class-use/SearchResult.SearchAdapter.html
+* doc/com/realestate/ui/class-use/SearchResult.html
+* doc/com/realestate/ui/package-frame.html
+* doc/com/realestate/ui/package-summary.html
+* doc/com/realestate/ui/package-tree.html
+* doc/com/realestate/ui/package-use.html
+* doc/com/realestate/utils/
+* doc/com/realestate/utils/TouchEffect.html
+* doc/com/realestate/utils/class-use/
+* doc/com/realestate/utils/class-use/TouchEffect.html
+* doc/com/realestate/utils/package-frame.html
+* doc/com/realestate/utils/package-summary.html
+* doc/com/realestate/utils/package-tree.html
+* doc/com/realestate/utils/package-use.html
+* doc/constant-values.html
+* doc/deprecated-list.html
+* doc/help-doc.html
+* doc/index-files/
+* doc/index-files/index-1.html
+* doc/index-files/index-10.html
+* doc/index-files/index-11.html
+* doc/index-files/index-12.html
+* doc/index-files/index-13.html
+* doc/index-files/index-14.html
+* doc/index-files/index-15.html
+* doc/index-files/index-16.html
+* doc/index-files/index-17.html
+* doc/index-files/index-18.html
+* doc/index-files/index-19.html
+* doc/index-files/index-2.html
+* doc/index-files/index-20.html
+* doc/index-files/index-21.html
+* doc/index-files/index-3.html
+* doc/index-files/index-4.html
+* doc/index-files/index-5.html
+* doc/index-files/index-6.html
+* doc/index-files/index-7.html
+* doc/index-files/index-8.html
+* doc/index-files/index-9.html
+* doc/index.html
+* doc/overview-frame.html
+* doc/overview-summary.html
+* doc/overview-tree.html
+* doc/package-list
+* doc/resources/
+* doc/resources/background.gif
+* doc/resources/tab.gif
+* doc/resources/titlebar.gif
+* doc/resources/titlebar_end.gif
+* doc/stylesheet.css
+* javadoc.xml
+* proguard-project.txt
+From SlidingTabs:
+* readme.txt
+From VideoCaptureActivity:
+* LandscapeVideoCapture-LandscapeVideoCapture.iml
+* LandscapeVideoCapture.iml
+* build.gradle
+* gradle.properties
+* proguard-project.txt
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+gcm.jar => com.google.android.gms:play-services:+
+gson-2.1.jar => com.google.code.gson:gson:2.1
+guava-11.0.1.jar => com.google.guava:guava:11.0.1
+protobuf-java-2.4.1.jar => com.google.protobuf:protobuf-java:2.4.1
+
+Potentially Missing Dependency:
+-------------------------------
+When we replaced the following .jar files with a Gradle dependency, we
+inferred the dependency version number from the filename. This
+specific version may not actually be available from the repository.
+If you get a build error stating that the dependency is missing, edit
+the version number to for example "+" to pick up the latest version
+instead. (This may require you to update your code if the library APIs
+have changed.)
+
+gson-2.1.jar => version 2.1 in com.google.code.gson:gson:2.1
+guava-11.0.1.jar => version 11.0.1 in com.google.guava:guava:11.0.1
+protobuf-java-2.4.1.jar => version 2.4.1 in com.google.protobuf:protobuf-java:2.4.1
+
+Replaced Libraries with Dependencies:
+-------------------------------------
+The importer recognized the following library projects as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the source files in your project were of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the library replacement in the import wizard and try
+again:
+
+google-play-services_lib => [com.google.android.gms:play-services:+]
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+In SlidingTabs:
+* AndroidManifest.xml => slidingTabs/src/main/AndroidManifest.xml
+* assets/ => slidingTabs/src/main/assets
+* lint.xml => slidingTabs/lint.xml
+* res/ => slidingTabs/src/main/res/
+* src/ => slidingTabs/src/main/java/
+In VideoCaptureActivity:
+* AndroidManifest.xml => videoCaptureActivity/src/main/AndroidManifest.xml
+* assets/ => videoCaptureActivity/src/main/assets
+* res/ => videoCaptureActivity/src/main/res/
+* src/ => videoCaptureActivity/src/main/java/
+In MySafety2:
+* AndroidManifest.xml => mySafety2/src/main/AndroidManifest.xml
+* assets/ => mySafety2/src/main/assets/
+* libs/android-async-http-1.4.4.jar => mySafety2/libs/android-async-http-1.4.4.jar
+* libs/android-smart-image-view-1.0.0.jar => mySafety2/libs/android-smart-image-view-1.0.0.jar
+* libs/android-support-v13.jar => mySafety2/libs/android-support-v13.jar
+* libs/androidrecording.jar => mySafety2/libs/androidrecording.jar
+* libs/google-api-client-1.10.3-beta.jar => mySafety2/libs/google-api-client-1.10.3-beta.jar
+* libs/google-api-client-android2-1.10.3-beta.jar => mySafety2/libs/google-api-client-android2-1.10.3-beta.jar
+* libs/google-http-client-1.10.3-beta.jar => mySafety2/libs/google-http-client-1.10.3-beta.jar
+* libs/google-http-client-android-1.18.0-rc.jar => mySafety2/libs/google-http-client-android-1.18.0-rc.jar
+* libs/google-http-client-android2-1.10.3-beta.jar => mySafety2/libs/google-http-client-android2-1.10.3-beta.jar
+* libs/google-oauth-client-1.10.1-beta.jar => mySafety2/libs/google-oauth-client-1.10.1-beta.jar
+* libs/jackson-core-asl-1.9.11.jar => mySafety2/libs/jackson-core-asl-1.9.11.jar
+* libs/jsr305-1.3.9.jar => mySafety2/libs/jsr305-1.3.9.jar
+* libs/otto-1.3.5.jar => mySafety2/libs/otto-1.3.5.jar
+* res/ => mySafety2/src/main/res/
+* src/ => mySafety2/src/main/java/
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)
