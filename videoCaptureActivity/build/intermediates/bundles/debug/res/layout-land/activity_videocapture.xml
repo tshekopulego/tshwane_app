@@ -18,4 +18,4 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/videocapture_videocaptureview_vcv"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" /><!-- From: file:/Users/mac/AndroidStudioProjects/CoSafety/videoCaptureActivity/src/main/res/layout-land/activity_videocapture.xml -->
+    android:layout_height="match_parent" /><!-- From: file:/Users/mac/AndroidStudioProjects/tshwane_app/videoCaptureActivity/src/main/res/layout-land/activity_videocapture.xml -->

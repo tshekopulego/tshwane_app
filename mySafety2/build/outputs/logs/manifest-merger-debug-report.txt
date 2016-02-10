@@ -16,7 +16,7 @@ ADDED from AndroidManifest.xml:2:1
 uses-sdk
 ADDED from AndroidManifest.xml:7:5
 MERGED from com.android.support:multidex:1.0.1:18:5
-MERGED from CoSafety:videoCaptureActivity:unspecified:7:5
+MERGED from tshwane_app:videoCaptureActivity:unspecified:7:5
 MERGED from com.google.android.gms:play-services:7.5.0:18:5
 MERGED from com.google.android.gms:play-services-ads:7.5.0:23:5
 MERGED from com.google.android.gms:play-services-base:7.5.0:18:5
@@ -217,7 +217,7 @@ MERGED from com.google.android.gms:play-services-maps:7.5.0:24:5
 		ADDED from AndroidManifest.xml:36:9
 application
 ADDED from AndroidManifest.xml:39:5
-MERGED from CoSafety:videoCaptureActivity:unspecified:11:5
+MERGED from tshwane_app:videoCaptureActivity:unspecified:11:5
 MERGED from com.google.android.gms:play-services:7.5.0:19:5
 MERGED from com.google.android.gms:play-services-ads:7.5.0:24:5
 MERGED from com.google.android.gms:play-services-base:7.5.0:20:5
@@ -447,7 +447,7 @@ ADDED from AndroidManifest.xml:102:9
 		ADDED from AndroidManifest.xml:103:13
 activity#com.jmolsmobile.landscapevideocapture.VideoCaptureActivity
 ADDED from AndroidManifest.xml:107:9
-MERGED from CoSafety:videoCaptureActivity:unspecified:15:9
+MERGED from tshwane_app:videoCaptureActivity:unspecified:15:9
 	android:label
 		ADDED from AndroidManifest.xml:109:13
 	android:name

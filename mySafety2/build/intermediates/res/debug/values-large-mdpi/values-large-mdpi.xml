@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/Users/mac/AndroidStudioProjects/CoSafety/mySafety2/src/main/res/values-large-mdpi/dimens.xml -->
+    <!-- From: file:/Users/mac/AndroidStudioProjects/tshwane_app/mySafety2/src/main/res/values-large-mdpi/dimens.xml -->
     <eat-comment/>
     <dimen name="divider">1.5dp</dimen>
     <dimen name="pad_10dp">20dp</dimen>

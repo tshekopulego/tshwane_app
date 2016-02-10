@@ -70,4 +70,4 @@
         android:src="@drawable/btn_decline"
         android:visibility="gone" />
 
-</RelativeLayout><!-- From: file:/Users/mac/AndroidStudioProjects/CoSafety/videoCaptureActivity/src/main/res/layout/view_videocapture.xml --><!-- From: file:/Users/mac/AndroidStudioProjects/CoSafety/mySafety2/build/intermediates/exploded-aar/CoSafety/videoCaptureActivity/unspecified/res/layout/view_videocapture.xml -->
+</RelativeLayout><!-- From: file:/Users/mac/AndroidStudioProjects/tshwane_app/videoCaptureActivity/src/main/res/layout/view_videocapture.xml --><!-- From: file:/Users/mac/AndroidStudioProjects/tshwane_app/mySafety2/build/intermediates/exploded-aar/tshwane_app/videoCaptureActivity/unspecified/res/layout/view_videocapture.xml -->

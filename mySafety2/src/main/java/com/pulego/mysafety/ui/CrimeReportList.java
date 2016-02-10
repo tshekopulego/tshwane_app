@@ -1,8 +1,5 @@
 package com.pulego.mysafety.ui;
 
-import java.util.ArrayList;
-
-import android.R.drawable;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
@@ -19,11 +16,11 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.loopj.android.image.SmartImageView;
+import com.pulego.mysafety.R;
 import com.pulego.mysafety.custom.CustomFragment;
 import com.pulego.mysafety.db.DBHelper;
-import com.pulego.mysafety.utils.ServerUtilities;
-import com.pulego.mysafety.R;
+
+import java.util.ArrayList;
 
 /**
  * The Class FeedList is the Fragment class that is launched when the user
@@ -33,15 +30,16 @@ import com.pulego.mysafety.R;
  */
 public class CrimeReportList extends CustomFragment {
 
-	private ListView obj;
 	TextView emptyMessage;
 	DBHelper mydb;
 	ArrayList array_list;
 	CrimeReportsAdapter arrayAdapter;
 	View v;
-
-	/** The feed list. */
-	private ArrayList<String[]> fList;
+    private ListView obj;
+    /**
+     * The feed list.
+     */
+    private ArrayList<String[]> fList;
 
 	/*
 	 * (non-Javadoc)
@@ -107,149 +105,153 @@ public class CrimeReportList extends CustomFragment {
 		obj.setAdapter(arrayAdapter);
 		arrayAdapter.notifyDataSetChanged();
 
-	}
+    }
 
-	/**
-	 * The Class FeedAdapter is the adapter class for Feed ListView. The current
-	 * implementation simply shows dummy contents and you can customize this
-	 * class to display actual contents as per your need.
-	 */
-	private class CrimeReportsAdapter extends BaseAdapter {
+    public int getCrimeDrawable(String type) {
+        switch (type) {
+            case "Contact Crime":
+                return R.drawable.personscrime72;
+            case "Drugs/Guns":
+                return R.drawable.drugsguns72;
+            case "Corruption":
+                return R.drawable.corruption72;
+            case "Property Crime":
+                return R.drawable.property72;
+            case "Vehicle Crime":
+                return R.drawable.vehicle72;
+            case "Protest Action":
+                return R.drawable.public72;
+            case "Traffic Incident":
+                return R.drawable.traffic72;
+            case "Bylaw Infringement":
+                return R.drawable.bylaw72;
+            case "Other":
+                return R.drawable.help;
+            case "Test":
+                return R.drawable.test;
+            default:
+                return 0;
+        }
 
-		/*
-		 * (non-Javadoc)
-		 * 
-		 * @see android.widget.Adapter#getCount()
-		 */
-		@Override
-		public int getCount() {
-			return fList.size();
-		}
+    }
 
-		/*
-		 * (non-Javadoc)
-		 * 
-		 * @see android.widget.Adapter#getItem(int)
-		 */
-		@Override
-		public String[] getItem(int position) {
-			return fList.get(position);
-		}
+    /*
+     * (non-Javadoc)
+     *
+     * @see
+     * android.support.v4.app.Fragment#onCreateOptionsMenu(android.view.Menu,
+     * android.view.MenuInflater)
+     */
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        inflater.inflate(R.menu.noti_list, menu);
+        super.onCreateOptionsMenu(menu, inflater);
+    }
 
-		/*
-		 * (non-Javadoc)
-		 * 
-		 * @see android.widget.Adapter#getItemId(int)
-		 */
-		@Override
-		public long getItemId(int position) {
-			return position;
-		}
+    /*
+     * (non-Javadoc)
+     *
+     * @see
+     * android.support.v4.app.Fragment#onOptionsItemSelected(android.view.MenuItem
+     * )
+     */
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
 
-		/*
-		 * (non-Javadoc)
-		 * 
-		 * @see android.widget.Adapter#getView(int, android.view.View,
-		 * android.view.ViewGroup)
-		 */
-		@Override
-		public View getView(int position, View convertView, ViewGroup parent) {
-			if (convertView == null)
-				convertView = getLayoutInflater(null).inflate(
-						R.layout.crimereport_item, null);
+        return super.onOptionsItemSelected(item);
+    }
 
-			String[] d = getItem(position);
-			TextView lbl = (TextView) convertView.findViewById(R.id.title);
-			lbl.setText(d[1]);
+    @Override
+    public void onResume() {
+       
+        super.onResume();
 
-			lbl = (TextView) convertView.findViewById(R.id.message);
-			lbl.setText(d[3]);
+    }
 
-			TextView lblduration = (TextView) convertView
-					.findViewById(R.id.status);
-			lblduration.setText(d[9]);
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
 
-			TextView lbldateTimeLogged = (TextView) convertView
-					.findViewById(R.id.dateTimeLogged);
-			lbldateTimeLogged.setText("Logged:" + d[10]);
+        if (mydb != null)
+            mydb.close();
+    }
 
-			int drawable = getCrimeDrawable(d[1]);
+    /**
+     * The Class FeedAdapter is the adapter class for Feed ListView. The current
+     * implementation simply shows dummy contents and you can customize this
+     * class to display actual contents as per your need.
+     */
+    private class CrimeReportsAdapter extends BaseAdapter {
 
-			Drawable dr = getResources().getDrawable(drawable);
+        /*
+         * (non-Javadoc)
+         *
+         * @see android.widget.Adapter#getCount()
+         */
+        @Override
+        public int getCount() {
+            return fList.size();
+        }
 
-			ImageView img = (ImageView) convertView
-					.findViewById(R.id.loaderImageView);
+        /*
+         * (non-Javadoc)
+         *
+         * @see android.widget.Adapter#getItem(int)
+         */
+        @Override
+        public String[] getItem(int position) {
+            return fList.get(position);
+        }
 
-			img.setBackgroundDrawable(dr);
+        /*
+         * (non-Javadoc)
+         *
+         * @see android.widget.Adapter#getItemId(int)
+         */
+        @Override
+        public long getItemId(int position) {
+            return position;
+        }
 
-			return convertView;
-		}
+        /*
+         * (non-Javadoc)
+         *
+         * @see android.widget.Adapter#getView(int, android.view.View,
+         * android.view.ViewGroup)
+         */
+        @Override
+        public View getView(int position, View convertView, ViewGroup parent) {
+            if (convertView == null)
+                convertView = getLayoutInflater(null).inflate(
+                        R.layout.crimereport_item, null);
 
-	}
+            String[] d = getItem(position);
+            TextView lbl = (TextView) convertView.findViewById(R.id.title);
+            lbl.setText(d[1]);
 
-	public int getCrimeDrawable(String type) {
-		if (type.equals("Contact Crime"))
-			return R.drawable.personscrime72;
-		else if (type.equals("Drugs/Guns"))
-			return R.drawable.drugsguns72;
-		else if (type.equals("Corruption"))
-			return R.drawable.corruption72;
-		else if (type.equals("Property Crime"))
-			return R.drawable.property72;
-		else if (type.equals("Vehicle Crime"))
-			return R.drawable.vehicle72;
-		else if (type.equals("Protest Action"))
-			return R.drawable.public72;
-		else if (type.equals("Traffic Incident"))
-			return R.drawable.traffic72;
-		else if (type.equals("Bylaw Infringement"))
-			return R.drawable.bylaw72;
-		else if (type.equals("Other"))
-			return R.drawable.help;
-		else if (type.equals("Test"))
-			return R.drawable.test;
-		else
-			return 0;
+            lbl = (TextView) convertView.findViewById(R.id.message);
+            lbl.setText(d[3]);
 
-	}
+            TextView lblduration = (TextView) convertView
+                    .findViewById(R.id.status);
+            lblduration.setText(d[9]);
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see
-	 * android.support.v4.app.Fragment#onCreateOptionsMenu(android.view.Menu,
-	 * android.view.MenuInflater)
-	 */
-	@Override
-	public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-		inflater.inflate(R.menu.noti_list, menu);
-		super.onCreateOptionsMenu(menu, inflater);
-	}
+            TextView lbldateTimeLogged = (TextView) convertView
+                    .findViewById(R.id.dateTimeLogged);
+            lbldateTimeLogged.setText("Logged:" + d[10]);
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see
-	 * android.support.v4.app.Fragment#onOptionsItemSelected(android.view.MenuItem
-	 * )
-	 */
-	@Override
-	public boolean onOptionsItemSelected(MenuItem item) {
+            int drawable = getCrimeDrawable(d[1]);
 
-		return super.onOptionsItemSelected(item);
-	}
+            Drawable dr = getResources().getDrawable(drawable);
 
-	@Override
-	public void onResume() {
-		// TODO Auto-generated method stub
-		super.onResume();
+            ImageView img = (ImageView) convertView
+                    .findViewById(R.id.loaderImageView);
 
-	}
+            img.setBackgroundDrawable(dr);
 
-	@Override
-	public void onDestroy() {
-		super.onDestroy();
-		mydb.close();
+            return convertView;
+        }
+
 	}
 
 }

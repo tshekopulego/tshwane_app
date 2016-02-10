@@ -4,4 +4,4 @@
     <item android:drawable="@color/main_color_yellow" android:state_selected="true"/>
     <item android:drawable="@color/white"/>
 
-</selector><!-- From: file:/Users/mac/AndroidStudioProjects/CoSafety/mySafety2/src/main/res/drawable/list_selector.xml -->
+</selector><!-- From: file:/Users/mac/AndroidStudioProjects/tshwane_app/mySafety2/src/main/res/drawable/list_selector.xml -->

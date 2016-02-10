@@ -27,4 +27,4 @@
 	    android:layout_centerInParent="true"
 	    android:src="@drawable/img_rotate_device" />
 
-</RelativeLayout><!-- From: file:/Users/mac/AndroidStudioProjects/CoSafety/videoCaptureActivity/src/main/res/layout/activity_videocapture.xml --><!-- From: file:/Users/mac/AndroidStudioProjects/CoSafety/videoCaptureActivity/build/intermediates/bundles/debug/res/layout/activity_videocapture.xml -->
+</RelativeLayout><!-- From: file:/Users/mac/AndroidStudioProjects/tshwane_app/videoCaptureActivity/src/main/res/layout/activity_videocapture.xml --><!-- From: file:/Users/mac/AndroidStudioProjects/tshwane_app/videoCaptureActivity/build/intermediates/bundles/debug/res/layout/activity_videocapture.xml -->

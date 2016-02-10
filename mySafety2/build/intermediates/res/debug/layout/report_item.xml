@@ -15,4 +15,4 @@
     android:textColorHint="@color/black"
     android:textSize="@dimen/txt_16sp" >
 
-</TextView><!-- From: file:/Users/mac/AndroidStudioProjects/CoSafety/mySafety2/src/main/res/layout/report_item.xml -->
+</TextView><!-- From: file:/Users/mac/AndroidStudioProjects/tshwane_app/mySafety2/src/main/res/layout/report_item.xml -->

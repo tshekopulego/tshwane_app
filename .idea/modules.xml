@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/CoSafety.iml" filepath="$PROJECT_DIR$/CoSafety.iml" />
       <module fileurl="file://$PROJECT_DIR$/mySafety2/mySafety2.iml" filepath="$PROJECT_DIR$/mySafety2/mySafety2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tshwane_app.iml" filepath="$PROJECT_DIR$/tshwane_app.iml" />
       <module fileurl="file://$PROJECT_DIR$/videoCaptureActivity/videoCaptureActivity.iml" filepath="$PROJECT_DIR$/videoCaptureActivity/videoCaptureActivity.iml" />
     </modules>
   </component>
