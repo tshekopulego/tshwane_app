@@ -38,6 +38,7 @@ import com.pulego.mysafety.db.DBHelper;
 import com.pulego.mysafety.errorhandler.ExceptionHandler;
 import com.pulego.mysafety.model.Data;
 import com.pulego.mysafety.ui.AboutList;
+import com.pulego.mysafety.ui.CrimeReportList;
 import com.pulego.mysafety.ui.EmergencyContact;
 import com.pulego.mysafety.ui.LeftNavAdapter;
 import com.pulego.mysafety.ui.MapViewer;
@@ -91,7 +92,7 @@ public class MainActivity extends CustomActivity {
 	Editor editor;
 
 	// give your server registration url here
-	static String SERVER_URL; 
+	static String SERVER_URL;
 
 	static final String DISPLAY_MESSAGE_ACTION = "com.pulego.mysafety.DISPLAY_MESSAGE";
 
@@ -114,7 +115,7 @@ public class MainActivity extends CustomActivity {
 		requestWindowFeature(Window.FEATURE_ACTION_BAR);
 
 		super.onCreate(savedInstanceState);
-		
+
 		Thread.setDefaultUncaughtExceptionHandler(new ExceptionHandler(this));
 
 		easyRatingDialog = new EasyRatingDialog(this);
@@ -133,7 +134,6 @@ public class MainActivity extends CustomActivity {
 
 		// Check if Internet present
 		isInternetPresent = cd.isConnectingToInternet();
-		
 
 		if (!isInternetPresent) {
 			showOffline(this);
@@ -154,29 +154,26 @@ public class MainActivity extends CustomActivity {
 	}
 
 	private void showOffline(Context context) {
-		AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
-				context);
+		AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(context);
 
-			// set title
-			alertDialogBuilder.setTitle("Internet Connection Error");
+		// set title
+		alertDialogBuilder.setTitle("Internet Connection Error");
 
-			// set dialog message
-			alertDialogBuilder
-				.setMessage(R.string.enable_internet_connection)
-				.setCancelable(false)
-				.setPositiveButton("Ok",new DialogInterface.OnClickListener() {
-					public void onClick(DialogInterface dialog,int id) {
+		// set dialog message
+		alertDialogBuilder.setMessage(R.string.enable_internet_connection).setCancelable(false).setPositiveButton("Ok",
+				new DialogInterface.OnClickListener() {
+					public void onClick(DialogInterface dialog, int id) {
 						// if this button is clicked, close
 						// current activity
 						MainActivity.this.finish();
 					}
-				  });
+				});
 
-				// create alert dialog
-				AlertDialog alertDialog = alertDialogBuilder.create();
+		// create alert dialog
+		AlertDialog alertDialog = alertDialogBuilder.create();
 
-				// show it
-				alertDialog.show();
+		// show it
+		alertDialog.show();
 	}
 
 	/*
@@ -388,7 +385,7 @@ public class MainActivity extends CustomActivity {
 		al.add(new Data("Report Incident", R.drawable.report, R.drawable.report));
 		al.add(new Data("Nearby Services", R.drawable.nearby_ser, R.drawable.nearby_ser));
 		al.add(new Data("Emergency Contacts", R.drawable.emergency_cont, R.drawable.emergency_cont));
-		//al.add(new Data("Case History", R.drawable.case_history, R.drawable.case_history));
+		al.add(new Data("Case History", R.drawable.case_history, R.drawable.case_history));
 		al.add(new Data("Notifications", R.drawable.not_, R.drawable.not_));
 		al.add(new Data("Survey", R.drawable.survey, R.drawable.survey));
 		al.add(new Data("About", R.drawable.about, R.drawable.about));
@@ -415,19 +412,17 @@ public class MainActivity extends CustomActivity {
 		} else if (pos == 2) {
 			title = "Emergency Contacts";
 			f = new EmergencyContact();
-		} 
-		/*else if (pos == 3) {
+		} else if (pos == 3) {
 			title = "Crime History Report";
 			f = new CrimeReportList();
-		} */
-		else if (pos == 3) {
+		} else if (pos == 4) {
 			title = "Notifications";
 			f = new NotificationList();
-		} else if (pos == 4) {
+		} else if (pos == 5) {
 			title = "Survey";
 			f = new Survey();
 
-		} else if (pos == 5) {
+		} else if (pos == 6) {
 			title = "About";
 			f = new AboutList();
 		}

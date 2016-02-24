@@ -74,7 +74,7 @@ public class GcmMessageHandler extends IntentService {
 
 		} else if (casenum != null) {
 
-			mydb.insertNotification(title, uid, message, messageType, null);
+			mydb.insertNotification(title + " - " + casenum, uid, message, messageType, null);
 
 			mydb.updateCrimeReportStatus(uid, status,casenum);
 
